@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    if (window.self !== window.top) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      window.addEventListener('message', function(e) {
+        if (e.data && e.data.type === 'poli-theme') {
+          document.documentElement.setAttribute('data-theme', e.data.light ? 'light' : 'dark');
+        }
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate nickel release rate from body jewelry alloys under EN 1811. Check compliance against the 0.2 µg/cm²/week EU piercing limit for REACH Annex XVII.">
+  <title>Nickel Release Calculator — EN 1811 Compliance | Poli International</title>
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Nickel Release Calculator — EN 1811 | Poli International">
+  <meta property="og:description" content="Estimate nickel release from body jewelry alloys. Check EN 1811 compliance — 0.2 µg/cm²/week piercing limit under EU REACH Annex XVII.">
+  <meta property="og:url"         content="https://poliinternational.com/nickel-release-calculator/">
+  <meta property="og:site_name"   content="Poli International">
+  <meta property="og:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Nickel Release Calculator — EN 1811 | Poli International">
+  <meta name="twitter:description" content="Calculate nickel release rate and check EU EN 1811 compliance for body jewelry alloys.">
+  <meta name="twitter:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
+
+  <link rel="stylesheet" href="/tools/nickel-release-calculator/css/style.css">
+</head>
+<body>
+
+<div class="tool-wrapper">
+
+  <!-- Header -->
+  <header class="tool-header">
+    <div class="tool-header__badge">
+      <span>🔬</span> EN 1811 Compliance
+    </div>
+    <h1>Nickel Release Calculator</h1>
+    <p>
+      Estimate nickel release from body jewelry alloys and check compliance
+      against the EU EN&nbsp;1811 piercing limit of 0.2&nbsp;µg/cm²/week
+      (REACH Annex&nbsp;XVII, Entry&nbsp;27).
+    </p>
+  </header>
+
+  <!-- Tabs -->
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="lookup" role="tab" aria-selected="true">
+      🔍 Material lookup
+    </button>
+    <button class="tab-btn" data-tab="calc" role="tab" aria-selected="false">
+      🧮 Custom calculator
+    </button>
+  </div>
+
+  <!-- ── Lookup tab ─────────────────────────────────────────────── -->
+  <div id="panel-lookup" class="tab-panel active">
+    <div class="input-card">
+      <label class="input-label" for="lookup-input">Jewelry material or alloy</label>
+      <div class="search-row">
+        <input
+          type="text"
+          id="lookup-input"
+          class="input-field"
+          placeholder="e.g. titanium, white gold, surgical steel, nickel silver, BioFlex…"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button id="lookup-btn" class="btn btn-primary">Look Up</button>
+      </div>
+      <p class="input-hint">
+        Returns nickel content, estimated release rate, and EN&nbsp;1811 compliance status.
+        Covers 15 materials including implant-grade alloys, gold, silver, and polymers.
+      </p>
+    </div>
+    <div id="lookup-results"></div>
+  </div>
+
+  <!-- ── Calculator tab ────────────────────────────────────────── -->
+  <div id="panel-calc" class="tab-panel">
+    <div class="input-card">
+      <p class="input-hint" style="margin-top:0; margin-bottom:0.85rem;">
+        Estimate release rate from known nickel content. Uses an empirical model calibrated
+        against EN&nbsp;1811 literature data. Not a substitute for a certified test report.
+      </p>
+      <div class="calc-form-grid">
+        <div class="calc-field">
+          <label class="input-label" for="calc-nickel-pct">Nickel content (%)</label>
+          <input
+            type="number"
+            id="calc-nickel-pct"
+            class="input-field"
+            placeholder="e.g. 12"
+            min="0" max="100" step="0.1"
+          >
+        </div>
+        <div class="calc-field">
+          <label class="input-label" for="calc-surface">Surface finish</label>
+          <select id="calc-surface" class="input-field">
+            <option value="polished">Mirror polished</option>
+            <option value="standard" selected>Standard / machine finished</option>
+            <option value="brushed">Brushed / satin</option>
+            <option value="rough">Rough / cast</option>
+            <option value="scratched">Scratched / worn</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label class="input-label" for="calc-area">Surface area (cm²) <span style="font-weight:400;text-transform:none">— optional</span></label>
+          <input
+            type="number"
+            id="calc-area"
+            class="input-field"
+            placeholder="e.g. 2.5 — for total weekly load"
+            min="0.01" step="0.1"
+          >
+        </div>
+      </div>
+      <button id="calc-btn" class="btn btn-primary">🧮 Calculate</button>
+    </div>
+    <div id="calc-results"></div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>Regulatory disclaimer:</strong> Estimated release rates are derived from an empirical model
+    based on EN&nbsp;1811 literature and are for <em>guidance only</em>.
+    Actual nickel release depends on alloy processing, passivation quality, surface area, skin pH,
+    sweat chemistry, and wear conditions.
+    To demonstrate EN&nbsp;1811 compliance for product sale in the EU, obtain a certified test report
+    from an accredited laboratory.
+    The EU nickel limit for piercing jewelry is 0.2&nbsp;µg/cm²/week (REACH Annex&nbsp;XVII, Entry&nbsp;27;
+    EU Directive 94/27/EC, as amended by 2004/96/EC).
+  </div>
+
+</div>
+
+<script src="/tools/nickel-release-calculator/js/nickel-data.js"></script>
+<script src="/tools/nickel-release-calculator/js/app.js"></script>
+</body>
+</html>
