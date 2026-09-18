@@ -2,6 +2,75 @@
 <html lang="en">
 <head>
   <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Nickel Release Calculator — EN 1811 Guide &amp; Material Reference</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Nickel Release Calculator — Reference guide for EN 1811:2023 and REACH Annex XVII Entry 27 nickel release limits in body jewelry. Material reference, statutory thresholds, and studio compliance documentation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nickel Release Calculator — EN 1811 Guide &amp; Material Reference">
+  <meta property="og:description" content="Reference guide for EN 1811:2023 and REACH Annex XVII Entry 27 nickel release limits in body jewelry. Material reference, statutory thresholds, and studio compliance documentation.">
+  <meta property="og:url" content="https://poliinternational.com/nickel-release-calculator/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nickel Release Calculator — EN 1811 Guide &amp; Material Reference">
+  <meta name="twitter:description" content="Reference guide for EN 1811:2023 and REACH Annex XVII Entry 27 nickel release limits in body jewelry. Material reference, statutory thresholds, and studio compliance documentation.">
+  <!-- JSON-LD Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is EN 1811 compliance the same as \"nickel-free\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. \"Nickel-free\" is an unregulated marketing phrase with no statutory definition under EU law. EN 1811 does not test whether an alloy contains zero nickel by weight. Instead, it measures the rate at which nickel ions leach out of the jewelry surface into artificial sweat over one week. An alloy containing nickel—such as implant-grade 316LVM stainless steel with 10% to 14% nickel—can meet the legal standard because its passive chromium oxide layer prevents nickel release. Conversely, an inferior alloy with only 1% nickel can fail if its surface releases freely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the EU nickel limit under REACH Annex XVII, Entry 27?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "European REACH Regulation (EC) No 1907/2006, Annex XVII, Entry 27 specifies two strict release thresholds: less than 0.2 µg/cm²/week for post assemblies inserted into pierced ears and other pierced parts of the human body during epithelization and healed wear; and 0.5 µg/cm²/week for articles intended to come into direct and prolonged contact with the skin. For coated articles, the coating must ensure the release rate remains below the limit for at least two years of normal use, verified by EN 12472 mechanical wear simulation before EN 1811 testing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is EN 1811:2023 and how does it test body jewelry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EN 1811:2023 is the official European reference test method for release of nickel from post assemblies inserted into pierced parts of the human body and articles in direct and prolonged contact with the skin. Articles are submerged in artificial sweat solution (pH 6.5 ± 0.1) at 30 °C for 168 hours (one week), and released nickel ions are quantitatively measured using inductively coupled plasma spectrometry (ICP-OES or ICP-MS)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a negative Dimethylglyoxime (DMG) spot test prove jewelry is EU compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A negative DMG spot test only indicates that nickel release is below approximately 10 µg/cm²/week—which is 50 times higher than the legal REACH piercing threshold of 0.2 µg/cm²/week. An alloy can easily release enough nickel to cause allergic contact dermatitis and violate European law while yielding a negative DMG test result."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What jewelry materials are safe for individuals with a diagnosed nickel allergy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Safe, biocompatible choices include BioFlex® body jewelry (medical-grade PP-R random copolymer, inherently zero nickel, ISO 10993 compliant), implant-grade titanium (ASTM F136 / ISO 5832-3 Ti-6Al-4V ELI), pure niobium (ASTM B392, 99.9% unalloyed), and platinum (Pt 950). Austenitic surgical steel and gold alloys containing nickel or plated with nickel under-layers should be avoided."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are historical EN 1811 test reports considered legally outdated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Historical test reports issued under EN 1811:2011 or EN 1811:2011+A1:2015 frequently utilized an inconclusive decision band (0.11 to 0.28 µg/cm²/week) that cannot be marketed as compliant today. Furthermore, REACH Annex XVII Entry 27 legally requires coated or plated articles to undergo EN 12472 wear simulation (two years of simulated normal wear) before EN 1811 testing; older reports tested un-aged items and are legally invalid."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/tools/nickel-release-calculator/css/style.css">
   <script>
     if (window.self !== window.top) {
       document.documentElement.setAttribute('data-theme', 'dark');
@@ -12,134 +81,635 @@
       });
     }
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Calculate nickel release rate from body jewelry alloys under EN 1811. Check compliance against the 0.2 µg/cm²/week EU piercing limit for REACH Annex XVII.">
-  <title>Nickel Release Calculator — EN 1811 Compliance | Poli International</title>
-
-  <meta property="og:type"        content="website">
-  <meta property="og:title"       content="Nickel Release Calculator — EN 1811 | Poli International">
-  <meta property="og:description" content="Estimate nickel release from body jewelry alloys. Check EN 1811 compliance — 0.2 µg/cm²/week piercing limit under EU REACH Annex XVII.">
-  <meta property="og:url"         content="https://poliinternational.com/nickel-release-calculator/">
-  <meta property="og:site_name"   content="Poli International">
-  <meta property="og:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
-
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Nickel Release Calculator — EN 1811 | Poli International">
-  <meta name="twitter:description" content="Calculate nickel release rate and check EU EN 1811 compliance for body jewelry alloys.">
-  <meta name="twitter:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
-
-  <link rel="stylesheet" href="/tools/nickel-release-calculator/css/style.css">
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Nickel Release Calculator, EN 1811",
+  "url": "https://poliinternational.com/tools/nickel-release-calculator/",
+  "description": "Check EN 1811 nickel release for body jewelry alloys. Use Patrick Poli\\",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "dateModified": "2026-09-18",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true
+}
+</script>
+  <link rel="stylesheet" href="/tools/shared/print.css" media="print">
+  <link rel="stylesheet" href="/tools/shared/a11y.css">
 </head>
 <body>
-
-<div class="tool-wrapper">
-
-  <!-- Header -->
-  <header class="tool-header">
-    <div class="tool-header__badge">
-      <span>🔬</span> EN 1811 Compliance
-    </div>
-    <h1>Nickel Release Calculator</h1>
-    <p>
-      Estimate nickel release from body jewelry alloys and check compliance
-      against the EU EN&nbsp;1811 piercing limit of 0.2&nbsp;µg/cm²/week
-      (REACH Annex&nbsp;XVII, Entry&nbsp;27).
-    </p>
-  </header>
-
-  <!-- Tabs -->
-  <div class="tabs" role="tablist">
-    <button class="tab-btn active" data-tab="lookup" role="tab" aria-selected="true">
-      🔍 Material lookup
-    </button>
-    <button class="tab-btn" data-tab="calc" role="tab" aria-selected="false">
-      🧮 Custom calculator
-    </button>
-  </div>
-
-  <!-- ── Lookup tab ─────────────────────────────────────────────── -->
-  <div id="panel-lookup" class="tab-panel active">
-    <div class="input-card">
-      <label class="input-label" for="lookup-input">Jewelry material or alloy</label>
-      <div class="search-row">
-        <input
-          type="text"
-          id="lookup-input"
-          class="input-field"
-          placeholder="e.g. titanium, white gold, surgical steel, nickel silver, BioFlex…"
-          autocomplete="off"
-          spellcheck="false"
-        >
-        <button id="lookup-btn" class="btn btn-primary">Look Up</button>
-      </div>
-      <p class="input-hint">
-        Returns nickel content, estimated release rate, and EN&nbsp;1811 compliance status.
-        Covers 15 materials including implant-grade alloys, gold, silver, and polymers.
-      </p>
-    </div>
-    <div id="lookup-results"></div>
-  </div>
-
-  <!-- ── Calculator tab ────────────────────────────────────────── -->
-  <div id="panel-calc" class="tab-panel">
-    <div class="input-card">
-      <p class="input-hint" style="margin-top:0; margin-bottom:0.85rem;">
-        Estimate release rate from known nickel content. Uses an empirical model calibrated
-        against EN&nbsp;1811 literature data. Not a substitute for a certified test report.
-      </p>
-      <div class="calc-form-grid">
-        <div class="calc-field">
-          <label class="input-label" for="calc-nickel-pct">Nickel content (%)</label>
-          <input
-            type="number"
-            id="calc-nickel-pct"
-            class="input-field"
-            placeholder="e.g. 12"
-            min="0" max="100" step="0.1"
-          >
-        </div>
-        <div class="calc-field">
-          <label class="input-label" for="calc-surface">Surface finish</label>
-          <select id="calc-surface" class="input-field">
-            <option value="polished">Mirror polished</option>
-            <option value="standard" selected>Standard / machine finished</option>
-            <option value="brushed">Brushed / satin</option>
-            <option value="rough">Rough / cast</option>
-            <option value="scratched">Scratched / worn</option>
-          </select>
-        </div>
-        <div class="calc-field">
-          <label class="input-label" for="calc-area">Surface area (cm²) <span style="font-weight:400;text-transform:none">— optional</span></label>
-          <input
-            type="number"
-            id="calc-area"
-            class="input-field"
-            placeholder="e.g. 2.5 — for total weekly load"
-            min="0.01" step="0.1"
-          >
+  <div class="tool-wrapper">
+    <!-- Header -->
+    <header class="tool-header">
+      <div class="tool-header-top">
+        <div class="header-badges-wrap"><span class="tool-header__badge" data-i18n="app.badge">EN 1811:2023 &amp; REACH Annex XVII Entry 27</span> <span class="tool-header__badge tool-header__badge--pwa" data-i18n="pwa.badge">Offline Ready Reference</span></div>
+        <div class="lang-selector-wrap">
+          <label for="lang-select" class="lang-label" data-i18n="common.language">Language:</label>
+          <select id="lang-select" class="lang-select" aria-label="Select language" data-i18n-attr="aria-label:common.lang_select_aria"></select>
         </div>
       </div>
-      <button id="calc-btn" class="btn btn-primary">🧮 Calculate</button>
+      <h1 data-i18n="app.title">Nickel Release Calculator: EN 1811 &amp; REACH Reference</h1>
+      <p class="tool-header-sub" data-i18n="app.subtitle">What EN 1811 measures, the legal EU piercing limits, and what determines whether jewelry releases nickel.</p>
+    </header>
+
+    <!-- Top Queries (Section A) -->
+    <section class="top-queries-container" aria-label="Quick Search Answers" data-i18n-attr="aria-label:common.top_queries_aria">
+      <article class="top-query-card">
+        <h2 class="top-query-title" data-i18n="qa.q1.title">Is EN 1811 compliance the same as "nickel-free"?</h2>
+        <p class="top-query-answer" data-i18n="qa.q1.answer">No. "Nickel-free" is an unregulated marketing phrase with no statutory definition under EU law. EN 1811 does not test whether an alloy contains zero nickel by weight. Instead, it measures the rate at which nickel ions leach out of the jewelry surface into artificial sweat over one week. An alloy containing nickel—such as implant-grade 316LVM stainless steel with 10% to 14% nickel—can meet the legal standard because its passive chromium oxide layer prevents nickel release. Conversely, an inferior alloy with only 1% nickel can fail if its surface releases freely.</p>
+      </article>
+      <article class="top-query-card">
+        <h2 class="top-query-title" data-i18n="qa.q2.title">What is the EU nickel limit under REACH Annex XVII, Entry 27?</h2>
+        <p class="top-query-answer" data-i18n="qa.q2.answer">European REACH Regulation (EC) No 1907/2006, Annex XVII, Entry 27 specifies two strict release thresholds: less than 0.2 µg/cm²/week for post assemblies inserted into pierced ears and other pierced parts of the human body during epithelization and healed wear; and 0.5 µg/cm²/week for articles intended to come into direct and prolonged contact with the skin. For coated articles, the coating must ensure the release rate remains below the limit for at least two years of normal use, verified by EN 12472 mechanical wear simulation before EN 1811 testing.</p>
+      </article>
+    </section>
+
+    <!-- Mobile Navigation Bar (Visible on <= 480px) -->
+    <div class="mobile-nav-bar" id="mobile-nav-bar">
+      <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Open navigation menu" data-i18n-attr="aria-label:nav.menu_toggle_aria">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </span>
+        <span class="mobile-nav-current-wrap">
+          <span class="mobile-nav-label-prefix" data-i18n="nav.active_section">Section:</span>
+          <span class="mobile-nav-current" id="mobile-nav-current-label" data-i18n="tab.materials">Material Reference</span>
+        </span>
+      </button>
     </div>
-    <div id="calc-results"></div>
+
+    <!-- Mobile Slide-out Drawer & Backdrop -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+    <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navigation Menu" data-i18n-attr="aria-label:nav.drawer_aria" aria-hidden="true" tabindex="-1">
+      <div class="mobile-drawer-header">
+        <div class="mobile-drawer-title" data-i18n="nav.drawer_title">Navigation</div>
+        <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close navigation menu" data-i18n-attr="aria-label:nav.drawer_close_aria">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="mobile-drawer-content" role="tablist" aria-label="Mobile Navigation Tabs">
+        <button class="mobile-drawer-btn active" role="tab" data-tab="materials" aria-selected="true" data-i18n="tab.materials">Material Reference</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="standards" aria-selected="false" data-i18n="tab.standards">The Standard &amp; Limits</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="symptoms" aria-selected="false" data-i18n="tab.symptoms">Symptom Route</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="compare" aria-selected="false" data-i18n="tab.compare">Material Comparison Matrix</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="jurisdictions" aria-selected="false" data-i18n="tab.jurisdictions">Global Nickel Regulations</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="allergies" aria-selected="false" data-i18n="tab.allergies">Nickel Allergies</button>
+        <button class="mobile-drawer-btn" role="tab" data-tab="studio" aria-selected="false" data-i18n="tab.studio">Studio Jewelry File &amp; Supplier Request</button>
+      </div>
+    </aside>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" role="tablist" aria-label="Guide Sections" data-i18n-attr="aria-label:common.tabs_aria">
+      <button class="tab-btn active" role="tab" data-tab="materials" aria-selected="true" data-i18n="tab.materials">Material Reference</button>
+      <button class="tab-btn" role="tab" data-tab="standards" aria-selected="false" data-i18n="tab.standards">The Standard &amp; Limits</button>
+      <button class="tab-btn" role="tab" data-tab="symptoms" aria-selected="false" data-i18n="tab.symptoms">Symptom Route</button>
+      <button class="tab-btn" role="tab" data-tab="compare" aria-selected="false" data-i18n="tab.compare">Material Comparison Matrix</button>
+      <button class="tab-btn" role="tab" data-tab="jurisdictions" aria-selected="false" data-i18n="tab.jurisdictions">Global Nickel Regulations</button>
+      <button class="tab-btn" role="tab" data-tab="allergies" aria-selected="false" data-i18n="tab.allergies">Nickel Allergies</button>
+      <button class="tab-btn" role="tab" data-tab="studio" aria-selected="false" data-i18n="tab.studio">Studio Jewelry File &amp; Supplier Request</button>
+    </nav>
+
+    <!-- TAB 1: Material Reference (Sections 3 & C) -->
+    <div id="panel-materials" class="tab-panel active" role="tabpanel">
+      <div class="filter-bar">
+        <div class="search-field-wrap">
+          <label for="mat-search-input" class="sr-only" data-i18n="mat.search.label">Search material or alloy</label>
+          <input type="text" id="mat-search-input" class="input-field" placeholder="Search material or alloy..." aria-label="Search material or alloy" data-i18n-attr="placeholder:mat.search.placeholder; aria-label:mat.search.aria_label">
+        </div>
+        <div class="filter-chips">
+          <button class="filter-chip active" data-cat="all" data-i18n="mat.filter.all">All Materials</button>
+          <button class="filter-chip" data-cat="metals" data-i18n="mat.filter.metals">Metals &amp; Alloys</button>
+          <button class="filter-chip" data-cat="polymers" data-i18n="mat.filter.polymers">Polymers (0% Metal)</button>
+          <button class="filter-chip" data-cat="receipt" data-i18n="mat.filter.receipt">Till Receipt Terms</button>
+        </div>
+        <p class="filter-hint" data-i18n="mat.summary.hint">Composition facts, metallurgical behavior, and required documentation. This tool does not estimate or simulate release numbers.</p>
+      </div>
+
+      <!-- Till Receipt Terms Section (Section C) -->
+      <div id="till-receipt-wrapper" class="till-receipt-wrapper" hidden>
+        <div class="section-intro-block">
+          <h2 data-i18n="receipt.section.title">Names on the Till Receipt: What You Were Actually Sold</h2>
+          <p data-i18n="receipt.section.desc">Select the commercial term printed on your invoice or packaging to see what it tells you about composition and what documentation to ask for.</p>
+        </div>
+        <div id="till-receipt-container"></div>
+      </div>
+
+      <!-- Materials List -->
+      <div id="materials-list-wrapper">
+        <div id="materials-list-container"></div>
+      </div>
+
+      <!-- Protective Coating Lifespan & EN 12472 Wear Simulation Section -->
+      <section class="coating-timeline-card" id="coating-timeline-card" aria-labelledby="coating-timeline-title">
+        <div class="coating-timeline-header">
+          <h2 class="coating-timeline-title" id="coating-timeline-title" data-i18n="coating.timeline.title">Protective Coating Lifespan &amp; EN 12472 Wear Simulation</h2>
+          <p class="coating-timeline-desc" data-i18n="coating.timeline.subtitle">EN 12472:2020 simulates 2 years of normal wear (abrasive tumbling in synthetic sweat) prior to EN 1811 testing. See why coatings degrade and why substrate selection is critical.</p>
+        </div>
+
+        <div class="coating-svg-container">
+          <svg class="coating-timeline-svg" viewBox="0 0 760 210" role="img" aria-label="Timeline of protective coating degradation across EN 12472 test cycles">
+            <!-- SVG timeline track -->
+            <line x1="40" y1="110" x2="720" y2="110" class="svg-track"></line>
+            
+            <!-- 2-Year Benchmark vertical reference line -->
+            <line x1="460" y1="20" x2="460" y2="175" class="svg-benchmark-line"></line>
+            <text x="460" y="15" text-anchor="middle" class="svg-text-benchmark" data-i18n="coating.timeline.stage3">Simulated 2-Year EN 12472 Benchmark</text>
+
+            <!-- Stage 0: 0 Cycles -->
+            <circle cx="80" cy="110" r="12" class="svg-node-circle svg-node-circle--pristine"></circle>
+            <text x="80" y="75" text-anchor="middle" class="svg-text-title" data-i18n="coating.timeline.stage0">0 Cycles (Factory Pristine)</text>
+            <text x="80" y="90" text-anchor="middle" class="svg-text-sub">Intact Barrier Surface</text>
+            <text x="80" y="145" text-anchor="middle" class="svg-text-sub">All coatings un-aged</text>
+
+            <!-- Stage 1: 1000-2000 Cycles -->
+            <circle cx="230" cy="110" r="12" class="svg-node-circle svg-node-circle--flash"></circle>
+            <text x="230" y="65" text-anchor="middle" class="svg-text-title" data-i18n="coating.timeline.stage1">1,000–2,000 Cycles: Gold Flash Breach</text>
+            <text x="230" y="80" text-anchor="middle" class="svg-text-sub">&lt;0.1 µm Flash Wear-through</text>
+            <text x="230" y="145" text-anchor="middle" class="svg-text-sub">Pores open &amp; rub away</text>
+            <text x="230" y="160" text-anchor="middle" class="svg-text-sub">Substrate immediately exposed</text>
+
+            <!-- Stage 2: 3000-5000 Cycles -->
+            <circle cx="360" cy="110" r="12" class="svg-node-circle svg-node-circle--plate"></circle>
+            <text x="360" y="65" text-anchor="middle" class="svg-text-title" data-i18n="coating.timeline.stage2">3,000–5,000 Cycles: Heavy Plating Edge Wear</text>
+            <text x="360" y="80" text-anchor="middle" class="svg-text-sub">1–2 µm Electroplate Frictions</text>
+            <text x="360" y="145" text-anchor="middle" class="svg-text-sub">Threads &amp; edges breach</text>
+            <text x="360" y="160" text-anchor="middle" class="svg-text-sub">Interlayer dissolution starts</text>
+
+            <!-- Stage 3: Benchmark Marker -->
+            <circle cx="460" cy="110" r="14" class="svg-node-circle svg-node-circle--benchmark"></circle>
+            <text x="460" y="195" text-anchor="middle" class="svg-text-benchmark">Statutory Pass / Fail Threshold</text>
+
+            <!-- Stage 4: Extended friction / PVD -->
+            <circle cx="630" cy="110" r="12" class="svg-node-circle svg-node-circle--pvd"></circle>
+            <text x="630" y="65" text-anchor="middle" class="svg-text-title" data-i18n="coating.timeline.stage4">Extended Friction: PVD Ceramic Longevity</text>
+            <text x="630" y="80" text-anchor="middle" class="svg-text-sub">TiN / ZrN Ceramic Adhesion</text>
+            <text x="630" y="145" text-anchor="middle" class="svg-text-sub">Hard ceramic resists abrasion</text>
+            <text x="630" y="160" text-anchor="middle" class="svg-text-sub">Safe: 0% Ni core (ASTM F136 Ti)</text>
+          </svg>
+        </div>
+
+        <div class="coating-legend-grid">
+          <div class="coating-legend-card">
+            <span class="coating-legend-tag coating-legend-tag--danger">Gold Flash (&lt;0.1 µm)</span>
+            <p class="coating-legend-desc" data-i18n="coating.timeline.flash_desc">Thin Gold Flash (&lt;0.1 µm): Rapid micro-porosity and abrasion loss under synthetic sweat friction. If applied over leachable brass or nickel-silver, severe nickel release begins early.</p>
+          </div>
+          <div class="coating-legend-card">
+            <span class="coating-legend-tag coating-legend-tag--warning">Micron Electroplate (1–2 µm)</span>
+            <p class="coating-legend-desc" data-i18n="coating.timeline.plate_desc">Heavy Micron Electroplate (1–2 µm): Higher durability but mechanical friction at threads, hinges, and seams eventually breaches the barrier. Must use a certified nickel-free barrier layer.</p>
+          </div>
+          <div class="coating-legend-card">
+            <span class="coating-legend-tag coating-legend-tag--safe">PVD Ceramic (0.5–2 µm)</span>
+            <p class="coating-legend-desc" data-i18n="coating.timeline.pvd_desc">PVD on Biocompatible Core (0.5–2 µm TiN/ZrN): High-hardness ceramic molecular bond withstanding prolonged EN 12472 cycles. Critical rule: applied over ASTM F136 titanium, even complete coating wear exposes 0% nickel safe metal.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB 2: The Standard & Limits (Sections 1, 2, 4, D, E) -->
+    <div id="panel-standards" class="tab-panel" role="tabpanel">
+      <!-- Dedicated Regulations & Standards Search Bar -->
+      <div class="standards-search-bar" id="standards-search-card">
+        <div class="std-search-input-wrap">
+          <label for="std-search-input" class="sr-only" data-i18n="std.search.label">Search regulations and limits</label>
+          <input type="text" id="std-search-input" class="input-field" placeholder="Search EN 1811:2023, REACH Entry 27, limits, wear..." aria-label="Search regulations, limits, EN 1811 and REACH terms" data-i18n-attr="placeholder:std.search.placeholder; aria-label:std.search.aria_label">
+          <button id="std-search-clear" class="std-search-clear-btn" type="button" aria-label="Clear search" data-i18n-attr="aria-label:std.search.clear" hidden>&times;</button>
+        </div>
+        <div id="std-search-info" class="standards-search-info" aria-live="polite"></div>
+        <div id="std-search-quick-links" class="standards-quick-links" aria-label="Quick jump to sections"></div>
+      </div>
+
+      <!-- Legal Limits -->
+      <section class="info-section" id="sec-legal-limits">
+        <h2 data-i18n="std.limits.title">The Legal Limits: REACH Annex XVII, Entry 27</h2>
+        <p data-i18n="std.limits.intro">Regulation (EC) No 1907/2006 (REACH) Annex XVII, Entry 27 (implementing EU Directive 94/27/EC, amended by 2004/96/EC) establishes statutory release thresholds across Europe:</p>
+        <div class="limits-highlight-grid">
+          <div class="limit-box">
+            <div class="limit-val">&lt; 0.2 µg/cm²/week</div>
+            <h3 class="limit-title" data-i18n="std.limit.piercing.title">0.2 µg/cm²/week — Pierced Parts of the Body</h3>
+            <p class="limit-desc" data-i18n="std.limit.piercing.desc">Applies to any post assembly or article inserted into pierced ears and other pierced parts of the human body during epithelization of the wound caused by piercing, whether subsequently retained or not. This encompasses both initial piercing jewelry and healed piercing jewelry inserted into a tract.</p>
+          </div>
+          <div class="limit-box">
+            <div class="limit-val">&lt; 0.5 µg/cm²/week</div>
+            <h3 class="limit-title" data-i18n="std.limit.contact.title">0.5 µg/cm²/week — Direct &amp; Prolonged Skin Contact</h3>
+            <p class="limit-desc" data-i18n="std.limit.contact.desc">Applies to articles intended to come into direct and prolonged contact with the skin, such as earrings, necklaces, bracelets, chains, anklets, finger rings, wristwatch cases and straps, rivets, buttons, tighteners, and zippers on garments.</p>
+          </div>
+        </div>
+        <div class="limit-box limit-box--spaced">
+          <h3 class="limit-title" data-i18n="std.limit.coating.title">Two-Year Durability for Coated Articles</h3>
+          <p class="limit-desc" data-i18n="std.limit.coating.desc">Coated non-nickel articles must ensure that the rate of nickel release does not exceed the relevant limit (0.2 or 0.5 µg/cm²/week) for a period of at least two years of normal use. Compliance is tested by subjecting the coated article to simulated accelerated wear and corrosion under EN 12472 before testing under EN 1811.</p>
+        </div>
+      </section>
+
+      <!-- Worked Examples (Section D) -->
+      <section class="info-section" id="sec-worked-examples">
+        <h2 data-i18n="std.examples.title">Which Limit Applies to What: Worked Examples</h2>
+        <p data-i18n="std.examples.intro">Statutory classification under REACH Annex XVII Entry 27:</p>
+        <div id="worked-examples-container"></div>
+      </section>
+
+      <!-- What EN 1811 is (Section 2) -->
+      <section class="info-section" id="sec-how-it-operates">
+        <h2 data-i18n="std.what_is.title">What EN 1811:2023 Is &amp; How It Operates</h2>
+        <p data-i18n="std.what_is.p1">EN 1811:2023 is the official European standard method titled: "Reference test method for release of nickel from all post assemblies which are inserted into pierced parts of the human body and articles intended to come into direct and prolonged contact with the skin". It replaced EN 1811:2011+A1:2015.</p>
+        <p data-i18n="std.what_is.p2">The test procedure immerses the test item in artificial sweat solution (containing sodium chloride, DL-lactic acid, and urea, pH adjusted with dilute ammonia) maintained at 30 ± 2 °C for exactly 168 ± 1 hours (one full week) without agitation. The quantity of dissolved nickel ions in the solution is then quantitatively measured using Inductively Coupled Plasma Optical Emission Spectrometry (ICP-OES) or Mass Spectrometry (ICP-MS), normalized against the exposed surface area in square centimeters.</p>
+      </section>
+
+      <!-- Regulatory Changelog Section -->
+      <section class="info-section changelog-section" id="sec-regulatory-changelog">
+        <div class="changelog-badge-wrap">
+          <span class="tool-header__badge" data-i18n="app.badge">EN 1811:2023 &amp; REACH Annex XVII Entry 27</span>
+        </div>
+        <h2 data-i18n="std.changelog.title">Regulatory Changelog: EN 1811 Revisions &amp; Why Historical Reports Expire</h2>
+        <p data-i18n="std.changelog.intro">Understanding standard revisions is critical for piercers reviewing mill certificates and laboratory test reports. Test reports issued under superseded standards or without mandatory wear simulation do not guarantee legal compliance under REACH Annex XVII Entry 27 today.</p>
+
+        <div class="changelog-grid">
+          <article class="changelog-card changelog-card--superseded">
+            <div class="changelog-card-header">
+              <span class="changelog-version" data-i18n="std.changelog.v1998.tag">EN 1811:1998</span>
+              <span class="changelog-status changelog-status--superseded" data-i18n="std.changelog.v1998.status">Superseded</span>
+            </div>
+            <p class="changelog-card-desc" data-i18n="std.changelog.v1998.summary">Original European harmonized standard for Directive 94/27/EC. Assessed migration into artificial sweat over 1 week. Lacked standardized wear simulation for coated items and used a wide tolerance window.</p>
+          </article>
+
+          <article class="changelog-card changelog-card--superseded">
+            <div class="changelog-card-header">
+              <span class="changelog-version" data-i18n="std.changelog.v2011.tag">EN 1811:2011</span>
+              <span class="changelog-status changelog-status--superseded" data-i18n="std.changelog.v2011.status">Superseded</span>
+            </div>
+            <p class="changelog-card-desc" data-i18n="std.changelog.v2011.summary">Introduced an adjustment factor (0.1) that led to confusion, and established an 'inconclusive' band (0.11 to 0.28 µg/cm²/week for piercing posts). Many suppliers misinterpreted inconclusive lab reports as passes.</p>
+          </article>
+
+          <article class="changelog-card changelog-card--superseded">
+            <div class="changelog-card-header">
+              <span class="changelog-version" data-i18n="std.changelog.v2015.tag">EN 1811:2011+A1:2015</span>
+              <span class="changelog-status changelog-status--superseded" data-i18n="std.changelog.v2015.status">Superseded</span>
+            </div>
+            <p class="changelog-card-desc" data-i18n="std.changelog.v2015.summary">Removed the 0.1 adjustment factor and clarified measurement uncertainty rules, but still retained an ambiguous inconclusive band. Often performed on un-aged plated items without wear pre-treatment.</p>
+          </article>
+
+          <article class="changelog-card changelog-card--current">
+            <div class="changelog-card-header">
+              <span class="changelog-version" data-i18n="std.changelog.v2023.tag">EN 1811:2023</span>
+              <span class="changelog-status changelog-status--current" data-i18n="std.changelog.v2023.status">Current European Standard</span>
+            </div>
+            <p class="changelog-card-desc" data-i18n="std.changelog.v2023.summary">Current official reference test method. Clarifies testing of piercing post assemblies, eliminates ambiguity in decision rules, tightens artificial sweat preparation tolerances, and strictly integrates with EN 12472:2020 wear pre-treatment for coated articles.</p>
+          </article>
+        </div>
+
+        <div class="changelog-outdated-card" id="sec-outdated-reports">
+          <h3 class="changelog-outdated-title" data-i18n="std.changelog.outdated_title">Why Historical Test Reports Might Be Legally Outdated</h3>
+          <ul class="factors-list">
+            <li class="factor-item">
+              <span class="factor-bullet">•</span>
+              <span data-i18n="std.changelog.reason1"><strong>Measurement Uncertainty Decision Rules:</strong> EN 1811:2011 and A1:2015 permitted an 'inconclusive' result band (0.11 to 0.28 µg/cm²/week for piercing posts) where laboratories did not declare a failure. Under modern enforcement and EN 1811:2023, strict decision rules prevent ambiguous passes from being marketed as compliant.</span>
+            </li>
+            <li class="factor-item">
+              <span class="factor-bullet">•</span>
+              <span data-i18n="std.changelog.reason2"><strong>Mandatory Wear Simulation (EN 12472:2020):</strong> Older certificates on gold-plated, PVD, or rhodium-flashed body jewelry tested items in pristine, un-aged condition. REACH Annex XVII Entry 27 legally mandates a two-year simulated wear resistance; un-aged test reports are legally invalid for coated jewelry.</span>
+            </li>
+            <li class="factor-item">
+              <span class="factor-bullet">•</span>
+              <span data-i18n="std.changelog.reason3"><strong>Universal Piercing Post Classification:</strong> Modern regulatory guidelines make clear that all post assemblies inserted into epithelialized or un-epithelialized piercing tracts fall under the 0.2 µg/cm²/week threshold. Older certificates attempting to classify healed piercing posts under the 0.5 µg/cm²/week skin contact limit are non-compliant.</span>
+            </li>
+            <li class="factor-item">
+              <span class="factor-bullet">•</span>
+              <span data-i18n="std.changelog.reason4"><strong>Reagent Purity and Calibration Tightening:</strong> The 2023 update tightens sweat solution buffering and analytical ICP calibration tolerances, meaning marginal passes produced in older testing runs may fail modern accredited laboratory audits.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- The DMG Test (Section E) -->
+      <section class="info-section" id="sec-dmg-test">
+        <h2 data-i18n="std.dmg.title">The Dimethylglyoxime (DMG) Spot Test: Both Ways</h2>
+        <p data-i18n="std.dmg.p1">The DMG spot test (standardized in CEN/TR 12471) is a qualitative chemical screening method, not a substitute for EN 1811 testing.</p>
+        <div class="dmg-grid">
+          <div class="dmg-box dmg-box--positive">
+            <h3 class="dmg-box-title" data-i18n="std.dmg.positive.title">What a Positive Result Tells You</h3>
+            <p class="dmg-box-text" data-i18n="std.dmg.positive.desc">A strawberry-red complex indicates the presence of soluble nickel ions leaching readily from the surface at a concentration roughly above 0.5 µg/cm²/week. A positive test indicates the article is releasing nickel and is unsuitable for piercing wear.</p>
+          </div>
+          <div class="dmg-box dmg-box--negative">
+            <h3 class="dmg-box-title" data-i18n="std.dmg.negative.title">What a Negative Result DOES NOT Tell You</h3>
+            <p class="dmg-box-text" data-i18n="std.dmg.negative.desc">A negative result does NOT prove compliance with the 0.2 µg/cm²/week piercing limit. The chemical colorimetric threshold of DMG is less sensitive than laboratory ICP spectrometry. Furthermore, lacquer, thin gold flash, or passivation layers can temporarily mask underlying nickel that will release once worn.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What Drives Release (Section 4) -->
+      <section class="info-section" id="sec-factors-release">
+        <h2 data-i18n="std.factors.title">What Decides Whether Jewelry Releases Nickel</h2>
+        <p data-i18n="std.factors.intro">Release is not determined by multiplying composition by a surface number. It is governed by five metallurgical and biological factors:</p>
+        <ul class="factors-list">
+          <li class="factor-item">
+            <span class="factor-bullet">•</span>
+            <span data-i18n="std.factor.alloy">Crystal Lattice Bonding: How tightly nickel atoms are bound into the crystalline structure of the alloy.</span>
+          </li>
+          <li class="factor-item">
+            <span class="factor-bullet">•</span>
+            <span data-i18n="std.factor.passivation">Passive Oxide Layer: Stable chromium oxide (Cr₂O₃) or titanium oxide (TiO₂) films isolate bulk metal from sweat.</span>
+          </li>
+          <li class="factor-item">
+            <span class="factor-bullet">•</span>
+            <span data-i18n="std.factor.finish">Surface Finish: Micro-roughness and crevices increase true surface area and create micro-galvanic cells.</span>
+          </li>
+          <li class="factor-item">
+            <span class="factor-bullet">•</span>
+            <span data-i18n="std.factor.wear">Coatings &amp; Mechanical Wear: Plating rubs off over time; wear simulation (EN 12472) tests whether underlying layers expose nickel.</span>
+          </li>
+          <li class="factor-item">
+            <span class="factor-bullet">•</span>
+            <span data-i18n="std.factor.sweat">Sweat Chemistry &amp; pH: Individual skin pH (acidic sweat accelerates ion dissolution) and chloride ion concentrations.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- TAB 3: Symptom Route (Section B) -->
+    <div id="panel-symptoms" class="tab-panel" role="tabpanel">
+      <div class="disclaimer-banner" role="alert" data-i18n="sym.disclaimer">
+        Clinical Notice: Only a licensed medical doctor or dermatologist diagnoses contact dermatitis or infection. This tool provides factual material guidance and diagnoses nothing.
+      </div>
+
+      <div class="section-intro-block">
+        <h2 data-i18n="sym.title">Symptom Route: Irritated, Red, or Weeping Piercing</h2>
+        <p data-i18n="sym.intro">If your piercing is red, itchy, or weeping, the symptoms may be a reaction to nickel release, an ordinary phase of wound healing, or a bacterial infection. Review the differences below and take the listed steps regarding your jewelry.</p>
+      </div>
+
+      <div class="symptom-table-wrap">
+        <table class="symptom-table" aria-label="Symptom comparison table" data-i18n-attr="aria-label:sym.table.aria_label">
+          <thead>
+            <tr>
+              <th data-i18n="sym.col.feature">Observation</th>
+              <th data-i18n="sym.col.healing">Ordinary Healing</th>
+              <th data-i18n="sym.col.allergy">Nickel Contact Dermatitis</th>
+              <th data-i18n="sym.col.infection">Bacterial Infection</th>
+            </tr>
+          </thead>
+          <tbody id="symptom-table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="action-steps-card">
+        <h3 data-i18n="sym.action.title">Immediate Steps to Take Regarding Jewelry</h3>
+        <ol class="action-steps-list">
+          <li data-i18n="sym.action.step1">Do not twist or pick at the jewelry. Trauma worsens both dermatitis and healing.</li>
+          <li data-i18n="sym.action.step2">Check your invoice or ask your piercer for the exact material specification and accredited EN 1811 test report.</li>
+          <li data-i18n="sym.action.step3">If your jewelry is unverified steel, plated base metal, or unknown white gold, consult your piercer about switching to guaranteed nickel-free materials: ASTM F136 implant-grade titanium, ASTM B392 niobium, or BioFlex® body jewelry (medical-grade PP-R).</li>
+          <li data-i18n="sym.action.step4">Consult a physician or dermatologist for formal diagnosis and patch testing if symptoms persist.</li>
+        </ol>
+      </div>
+
+      <div class="related-links-row">
+        <span class="related-links-title" data-i18n="sym.links.title">Related Studio Tools:</span>
+        <a href="https://poliinternational.com/aftercare/" target="_top" class="link-button" data-i18n="sym.link.aftercare">Aftercare Guidelines</a>
+        <a href="https://poliinternational.com/allergy-patch-test/" target="_top" class="link-button" data-i18n="sym.link.patch">Allergy Patch Test Reference</a>
+        <a href="https://poliinternational.com/material-certification-checker/" target="_top" class="link-button" data-i18n="sym.link.cert">Material Certification Checker</a>
+      </div>
+    </div>
+
+    <!-- TAB 4: Nickel Allergies (Section 6) -->
+    <div id="panel-allergies" class="tab-panel" role="tabpanel">
+      <div class="section-intro-block">
+        <h2 data-i18n="alg.title">For People with a Nickel Allergy</h2>
+        <p data-i18n="alg.intro">If you have been diagnosed with a nickel allergy by patch test, or suspect metal sensitivity, select materials whose chemical formulation contains zero nickel.</p>
+      </div>
+
+      <div class="allergy-grid">
+        <div class="allergy-item-card allergy-item-card--bioflex">
+          <h3 data-i18n="alg.bioflex.title">BioFlex® Body Jewelry</h3>
+          <p data-i18n="alg.bioflex.desc">BioFlex® body jewelry is manufactured from medical-grade polypropylene random copolymer (PP-R). It is an injection-moulded polymer containing 0% metal and 0% nickel. It is flexible, steam autoclavable, biologically inert, and suitable for initial piercings and long-term healed wear.</p>
+          <p class="allergy-note" data-i18n="alg.bioflex.note">BioFlex is medical-grade PP-R random copolymer; it is not PTFE. Patrick Poli is the creator of BioFlex® body jewelry.</p>
+        </div>
+
+        <div class="allergy-item-card">
+          <h3 data-i18n="alg.titanium.title">Implant-Grade Titanium (ASTM F136 / ISO 5832-3)</h3>
+          <p data-i18n="alg.titanium.desc">Ti-6Al-4V ELI titanium contains no nickel in its chemical composition. Forms an immediate, stable titanium dioxide passivation layer.</p>
+        </div>
+
+        <div class="allergy-item-card">
+          <h3 data-i18n="alg.niobium.title">Niobium (ASTM B392)</h3>
+          <p data-i18n="alg.niobium.desc">99.9% pure elemental niobium contains no nickel in its composition. Highly biocompatible and hypoallergenic.</p>
+        </div>
+
+        <div class="allergy-item-card">
+          <h3 data-i18n="alg.platinum.title">Platinum (Pt 950)</h3>
+          <p data-i18n="alg.platinum.desc">High-purity platinum alloyed with ruthenium, iridium, or cobalt contains no nickel. Resistant to chemical attack.</p>
+        </div>
+      </div>
+
+      <div class="allergy-cta-wrap">
+        <a href="https://poliinternational.com/allergy-patch-test/" target="_top" class="link-button" data-i18n="alg.link.patch">Visit the Allergy Patch Test Tool</a>
+      </div>
+    </div>
+
+    <!-- TAB: Material Comparison Matrix (Feature 4) -->
+    <div id="panel-compare" class="tab-panel" role="tabpanel">
+      <div class="section-intro-block">
+        <h2 data-i18n="compare.title">Side-by-Side Material Comparison Matrix</h2>
+        <p data-i18n="compare.desc">Compare two body jewelry materials directly across composition, passivation, EN 1811 migration behavior, initial piercing suitability, and autoclave compatibility.</p>
+      </div>
+      <div class="compare-controls-card">
+        <div class="compare-selectors-grid">
+          <div class="form-group">
+            <label for="compare-select-a" class="form-label" data-i18n="compare.select_mat_a">Material A</label>
+            <select id="compare-select-a" class="input-field"></select>
+          </div>
+          <div class="compare-vs-badge">VS</div>
+          <div class="form-group">
+            <label for="compare-select-b" class="form-label" data-i18n="compare.select_mat_b">Material B</label>
+            <select id="compare-select-b" class="input-field"></select>
+          </div>
+        </div>
+      </div>
+      <div id="compare-matrix-container"></div>
+    </div>
+
+    <!-- TAB: Global Nickel Regulations (Feature 5) -->
+    <div id="panel-jurisdictions" class="tab-panel" role="tabpanel">
+      <div class="section-intro-block">
+        <h2 data-i18n="jur.title">Multi-Jurisdictional Nickel Regulatory Comparison</h2>
+        <p data-i18n="jur.desc">Compare statutory nickel standards across major international markets. Understand the critical distinction between jurisdictions regulating ion migration rate in artificial sweat versus total mass content.</p>
+      </div>
+      <div id="jurisdictions-container"></div>
+      <div class="jur-disclaimer-box">
+        <h3 data-i18n="jur.takeaway_title">Key International Takeaway for Studios &amp; Importers</h3>
+        <p data-i18n="jur.takeaway_desc">Total nickel percentage by weight (such as XRF spectroscopy) does NOT prove compliance in the European Union or Switzerland. EU law exclusively regulates the migration rate of nickel ions into synthetic sweat over one week under EN 1811:2023. An alloy containing 12% nickel can pass if passivated, while an alloy with 0.8% nickel can fail if unprotected.</p>
+      </div>
+    </div>
+
+    <!-- TAB 5: Studio Jewellery File & Supplier Request (Sections 5, F, G) -->
+    <div id="panel-studio" class="tab-panel" role="tabpanel">
+      <div class="section-intro-block">
+        <h2 data-i18n="studio.title">Studio Jewelry File &amp; Supplier Compliance Request</h2>
+        <p data-i18n="studio.intro">Studios operating in or purchasing from the European Union must maintain compliance documentation for every article or batch placed into pierced skin.</p>
+      </div>
+
+      <div class="studio-grid">
+        <!-- Studio File Checklist (Section F) -->
+        <div class="studio-panel">
+          <h2 data-i18n="studio.checklist.title">Studio Compliance Record (Keep per Article/Batch)</h2>
+          <p class="studio-panel-desc" data-i18n="studio.panel.desc">Record compliance documentation for your studio archives.</p>
+          
+          <div class="form-group">
+            <label for="studio-input-name" class="form-label" data-i18n="studio.field.studio">Studio Name</label>
+            <input type="text" id="studio-input-name" class="input-field" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="studio-input-article" class="form-label" data-i18n="studio.field.article">Article / SKU Reference *</label>
+            <input type="text" id="studio-input-article" class="input-field" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="studio-input-supplier" class="form-label" data-i18n="studio.field.supplier">Supplier / Manufacturer Name</label>
+            <input type="text" id="studio-input-supplier" class="input-field" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="studio-input-material" class="form-label" data-i18n="studio.field.material">Material Specification (e.g. ASTM F136, ASTM F138)</label>
+            <input type="text" id="studio-input-material" class="input-field" placeholder="">
+          </div>
+
+          <div class="checklist-items">
+            <label class="check-item">
+              <input type="checkbox" id="chk-item-1">
+              <span data-i18n="studio.item1">EN 1811:2023 test report issued by an accredited laboratory (ISO/IEC 17025 accredited).</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" id="chk-item-2">
+              <span data-i18n="studio.item2">Exact article code / batch number on test report matches stock SKU.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" id="chk-item-3">
+              <span data-i18n="studio.item3">Stated numerical release rate is strictly below 0.2 µg/cm²/week for piercing jewelry (or below 0.5 µg/cm²/week for skin contact).</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" id="chk-item-4">
+              <span data-i18n="studio.item4">For coated articles: Report confirms EN 12472 wear simulation was conducted prior to EN 1811 testing.</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" id="chk-item-5">
+              <span data-i18n="studio.item5">Raw material mill test certificate verifying alloy standard.</span>
+            </label>
+          </div>
+
+          <div class="studio-actions-group">
+            <button id="studio-print-btn" class="btn btn-primary" data-i18n="studio.btn.print">Print to PDF</button>
+            <button id="studio-export-json-btn" class="btn btn-secondary" data-i18n="studio.btn.export_json">Download JSON</button>
+          </div>
+          <div id="studio-validation-error" class="validation-error" hidden></div>
+          <div id="studio-json-success-msg" class="copy-success-msg" hidden data-i18n="studio.json_downloaded">JSON Compliance Record Exported!</div>
+        </div>
+
+        <!-- Supplier Request Letter Generator (Section G) -->
+        <div class="studio-panel">
+          <h2 data-i18n="supplier.req.title">Supplier Request: Copyable &amp; Ready to Send</h2>
+          <p class="studio-panel-desc" data-i18n="supplier.req.desc">Generate a formal request letter for your jewelry supplier to obtain the necessary compliance documentation.</p>
+
+          <div class="form-group">
+            <label for="supplier-select-type" class="form-label" data-i18n="supplier.template.label">Select Request Template Type:</label>
+            <select id="supplier-select-type" class="input-field">
+              <option value="initial_test" data-i18n="supplier.template.opt_initial">Initial Purchase Compliance Request (EN 1811 &amp; REACH)</option>
+              <option value="coated_wear" data-i18n="supplier.template.opt_coated_wear">Verification of Wear Simulation for Coated Jewelry (EN 12472)</option>
+              <option value="mill_cert" data-i18n="supplier.template.opt_missing_mill">Request for Missing Raw Material Mill Certificate</option>
+              <option value="biocompat" data-i18n="supplier.template.opt_biocompat">Polymer &amp; Alternative Material Biocompatibility Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="supplier-input-name" class="form-label" data-i18n="supplier.field.name">Supplier Contact / Company</label>
+            <input type="text" id="supplier-input-name" class="input-field" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label for="supplier-input-items" class="form-label" data-i18n="supplier.field.items">Jewelry Items / Catalog Reference</label>
+            <input type="text" id="supplier-input-items" class="input-field" placeholder="">
+          </div>
+
+          <button id="supplier-copy-btn" class="btn btn-secondary" data-i18n="supplier.btn.copy">Copy Request Text</button>
+          <div id="supplier-copy-msg" class="copy-success-msg" hidden data-i18n="supplier.copied">Copied to Clipboard!</div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Disclaimer -->
-  <div class="disclaimer">
-    <strong>Regulatory disclaimer:</strong> Estimated release rates are derived from an empirical model
-    based on EN&nbsp;1811 literature and are for <em>guidance only</em>.
-    Actual nickel release depends on alloy processing, passivation quality, surface area, skin pH,
-    sweat chemistry, and wear conditions.
-    To demonstrate EN&nbsp;1811 compliance for product sale in the EU, obtain a certified test report
-    from an accredited laboratory.
-    The EU nickel limit for piercing jewelry is 0.2&nbsp;µg/cm²/week (REACH Annex&nbsp;XVII, Entry&nbsp;27;
-    EU Directive 94/27/EC, as amended by 2004/96/EC).
+  <!-- Printable Studio Sheet (Print Only - Formatted for A4 Archival) -->
+  <div class="print-record-sheet">
+    <div class="print-header">
+      <h2 data-i18n="studio.print.title">Studio Jewelry Compliance Record</h2>
+      <p data-i18n="studio.print.subtitle">REACH Annex XVII Entry 27 &amp; EN 1811:2023 Verification File</p>
+    </div>
+    <div class="print-meta-grid">
+      <div class="print-meta-item"><strong data-i18n="studio.print.meta_studio">Studio:</strong> <span id="print-val-studio">—</span></div>
+      <div class="print-meta-item"><strong data-i18n="studio.print.meta_date">Date:</strong> <span id="print-val-date">—</span></div>
+      <div class="print-meta-item"><strong data-i18n="studio.print.meta_article">Article / SKU:</strong> <span id="print-val-article">—</span></div>
+      <div class="print-meta-item"><strong data-i18n="studio.print.meta_supplier">Supplier:</strong> <span id="print-val-supplier">—</span></div>
+      <div class="print-meta-item"><strong data-i18n="studio.print.meta_material">Material Standard:</strong> <span id="print-val-material">—</span></div>
+    </div>
+    <div class="print-checklist-block">
+      <h2 data-i18n="studio.print.checklist_title">Documentation Audit Checklist</h2>
+      <div class="print-checklist-item">
+        <span class="print-box" id="print-box-1"></span>
+        <span data-i18n="studio.print.item1">EN 1811:2023 test report issued by an accredited laboratory (ISO/IEC 17025).</span>
+        <span class="print-status-tag" id="print-status-1" data-i18n="studio.print.pending_status">Not Verified</span>
+      </div>
+      <div class="print-checklist-item">
+        <span class="print-box" id="print-box-2"></span>
+        <span data-i18n="studio.print.item2">Exact article code / batch reference matches test documentation.</span>
+        <span class="print-status-tag" id="print-status-2" data-i18n="studio.print.pending_status">Not Verified</span>
+      </div>
+      <div class="print-checklist-item">
+        <span class="print-box" id="print-box-3"></span>
+        <span data-i18n="studio.print.item3">Stated numerical release rate is strictly below 0.2 µg/cm²/week.</span>
+        <span class="print-status-tag" id="print-status-3" data-i18n="studio.print.pending_status">Not Verified</span>
+      </div>
+      <div class="print-checklist-item">
+        <span class="print-box" id="print-box-4"></span>
+        <span data-i18n="studio.print.item4">Coated items: Simulated wear under EN 12472 verified prior to EN 1811 testing.</span>
+        <span class="print-status-tag" id="print-status-4" data-i18n="studio.print.pending_status">Not Verified</span>
+      </div>
+      <div class="print-checklist-item">
+        <span class="print-box" id="print-box-5"></span>
+        <span data-i18n="studio.print.item5">Raw material mill certificate verifying alloy standard (e.g. ASTM F136, ASTM F138).</span>
+        <span class="print-status-tag" id="print-status-5" data-i18n="studio.print.pending_status">Not Verified</span>
+      </div>
+    </div>
+    <div class="print-signoff-block">
+      <div class="print-signoff-title" data-i18n="studio.print.signoff_title">Compliance Verification &amp; Sign-off</div>
+      <div class="print-signoff-line" data-i18n="studio.print.signoff_text">Responsible Studio Person: ______________________   Signature: ______________________   Date: ____________</div>
+      <div class="print-a4-note" data-i18n="studio.print.a4_note">A4 Archival Document — Preserved in studio records under REACH Annex XVII Entry 27 documentation requirements.</div>
+    </div>
+    <div class="print-disclaimer" data-i18n="studio.print.disclaimer">
+      Studio Jewelry Compliance Record — Printout of user-entered studio data. Not an official regulatory certificate.
+    </div>
   </div>
 
-</div>
-
-<script src="/tools/nickel-release-calculator/js/nickel-data.js"></script>
-<script src="/tools/nickel-release-calculator/js/app.js"></script>
+  <!-- Scripts loaded in document order -->
+  <script src="/tools/nickel-release-calculator/js/i18n.js"></script>
+  <script src="/tools/nickel-release-calculator/js/nickel-data.js"></script>
+  <script src="/tools/nickel-release-calculator/js/app.js"></script>
 </body>
 </html>
