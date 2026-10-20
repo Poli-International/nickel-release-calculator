@@ -47,7 +47,8 @@
       de: 'Deutsch',
       es: 'Español',
       nl: 'Nederlands',
-      pt: 'Português'
+      pt: 'Português',
+      th: 'ไทย'
     };
     for (var i = 0; i < supported.length; i++) {
       var code = supported[i];
