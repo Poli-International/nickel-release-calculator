@@ -907,31 +907,31 @@
       "auditChecklist": [
         {
           "id": "en1811_2023_accredited_lab",
-          "requirement": "EN 1811:2023 test report issued by an accredited laboratory (ISO/IEC 17025 accredited)",
+          "requirement": t('studio.export.req1'),
           "verified": Boolean(chk1 && chk1.checked)
         },
         {
           "id": "batch_sku_match",
-          "requirement": "Exact article code / batch number on test report matches stock SKU",
+          "requirement": t('studio.export.req2'),
           "verified": Boolean(chk2 && chk2.checked)
         },
         {
           "id": "numerical_threshold_pass",
-          "requirement": "Stated numerical release rate is strictly below 0.2 µg/cm²/week for piercing jewelry (or below 0.5 µg/cm²/week for skin contact)",
+          "requirement": t('studio.export.req3'),
           "verified": Boolean(chk3 && chk3.checked)
         },
         {
           "id": "en12472_wear_simulation",
-          "requirement": "For coated articles: Report confirms EN 12472 wear simulation was conducted prior to EN 1811 testing",
+          "requirement": t('studio.export.req4'),
           "verified": Boolean(chk4 && chk4.checked)
         },
         {
           "id": "mill_test_certificate",
-          "requirement": "Raw material mill test certificate verifying alloy standard",
+          "requirement": t('studio.export.req5'),
           "verified": Boolean(chk5 && chk5.checked)
         }
       ],
-      "disclaimer": "Studio Jewelry Compliance Record — Export of user-entered studio compliance data. Not an official regulatory certificate."
+      "disclaimer": t('studio.export.disclaimer')
     };
 
     var jsonStr = JSON.stringify(exportData, null, 2);
