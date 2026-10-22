@@ -9,6 +9,9 @@
   var STORAGE_KEY = 'poli_tools_language';
 
   var DICTIONARY_EN = {
+    "a11y.mobile_navigation_tabs": "Mobile Navigation Tabs",
+    "a11y.timeline_of_protective_coating_degradati": "Timeline of protective coating degradation across EN 12472 test cycles",
+    "a11y.quick_jump_to_sections": "Quick jump to sections",
     "meta.title": "Nickel Release Calculator — EN 1811 Guide & Material Reference",
     "meta.description": "Nickel Release Calculator — Reference guide for EN 1811:2023 and REACH Annex XVII Entry 27 nickel release limits in body jewelry. Material reference, statutory thresholds, and studio compliance documentation.",
     "common.language": "Language:",
@@ -506,6 +509,9 @@
   };
 
   var DICTIONARY_FR = {
+    "a11y.mobile_navigation_tabs": "Onglets de navigation mobile",
+    "a11y.timeline_of_protective_coating_degradati": "Chronologie de la dégradation du revêtement protecteur au fil des cycles d'essai EN 12472",
+    "a11y.quick_jump_to_sections": "Accès rapide aux sections",
     "meta.title": "Calculateur de libération de nickel – Guide EN 1811 et référence des matériaux",
     "meta.description": "Calculateur de libération de nickel – Guide de référence pour la norme EN 1811:2023 et les limites de libération de nickel de l'annexe XVII entrée 27 de REACH dans les bijoux de corps. Référence des matériaux, seuils légaux et documentation de conformité en studio.",
     "common.language": "Langue :",
@@ -1003,6 +1009,9 @@
   };
 
   var DICTIONARY_IT = {
+    "a11y.mobile_navigation_tabs": "Schede di navigazione mobile",
+    "a11y.timeline_of_protective_coating_degradati": "Andamento del degrado del rivestimento protettivo nei cicli di prova EN 12472",
+    "a11y.quick_jump_to_sections": "Salto rapido alle sezioni",
     "meta.title": "Calcolatore rilascio di nichel – Guida EN 1811 e riferimento materiali",
     "meta.description": "Calcolatore rilascio di nichel – Guida di riferimento per la norma EN 1811:2023 e i limiti di rilascio del nichel REACH Allegato XVII Voce 27 nei gioielli da piercing. Riferimento materiali, soglie di legge e documentazione di conformità per studi di piercing.",
     "common.language": "Lingua:",
@@ -1500,6 +1509,9 @@
   };
 
   var DICTIONARY_DE = {
+    "a11y.mobile_navigation_tabs": "Mobile Navigationsregisterkarten",
+    "a11y.timeline_of_protective_coating_degradati": "Zeitverlauf des Abbaus der Schutzschicht über die Prüfzyklen nach EN 12472",
+    "a11y.quick_jump_to_sections": "Schnell zu den Bereichen springen",
     "meta.title": "Nickelabgabe-Rechner – EN 1811 Leitfaden und Materialreferenz",
     "meta.description": "Nickelabgabe-Rechner – Referenzleitfaden für EN 1811:2023 und die Grenzwerte der REACH-Verordnung Anhang XVII Eintrag 27 bei Körperschmuck. Materialreferenz, gesetzliche Grenzwerte und Studio-Konformitätsdokumentation.",
     "common.language": "Sprache:",
@@ -1997,6 +2009,9 @@
   };
 
   var DICTIONARY_ES = {
+    "a11y.mobile_navigation_tabs": "Pestañas de navegación móvil",
+    "a11y.timeline_of_protective_coating_degradati": "Cronología de la degradación del recubrimiento protector en los ciclos de ensayo EN 12472",
+    "a11y.quick_jump_to_sections": "Ir rápido a las secciones",
     "meta.title": "Calculadora de liberación de níquel: guía EN 1811 y referencia de materiales",
     "meta.description": "Calculadora de liberación de níquel: guía de referencia para los límites de liberación de níquel según EN 1811:2023 y REACH Anexo XVII Entrada 27 en joyería corporal. Referencia de materiales, límites legales y documentación de conformidad para estudios.",
     "common.language": "Idioma:",
@@ -2494,6 +2509,9 @@
   };
 
   var DICTIONARY_NL = {
+    "a11y.mobile_navigation_tabs": "Navigatietabbladen voor mobiel",
+    "a11y.timeline_of_protective_coating_degradati": "Tijdlijn van de afbraak van de beschermlaag over de EN 12472-testcycli",
+    "a11y.quick_jump_to_sections": "Snel naar onderdelen",
     "meta.title": "Nikkelafgifte-calculator: EN 1811-gids en materiaalreferentie",
     "meta.description": "Nikkelafgifte-calculator: naslaggids voor EN 1811:2023 en REACH Bijlage XVII Vermelding 27 grenswaarden voor nikkelafgifte in lichaamssieraden. Materiaalreferentie, wettelijke drempelwaarden en conformiteitsdocumentatie voor studio's.",
     "common.language": "Taal:",
@@ -2991,6 +3009,9 @@
   };
 
   var DICTIONARY_PT = {
+    "a11y.mobile_navigation_tabs": "Abas de navegação móvel",
+    "a11y.timeline_of_protective_coating_degradati": "Cronologia da degradação do revestimento protetor nos ciclos de ensaio EN 12472",
+    "a11y.quick_jump_to_sections": "Ir rapidamente às seções",
     "meta.title": "Calculadora de libertação de níquel: guia EN 1811 e referência de materiais",
     "meta.description": "Calculadora de libertação de níquel: guia de referência para os limites de libertação de níquel segundo a EN 1811:2023 e o REACH Anexo XVII Entrada 27 em joalharia corporal. Referência de materiais, limiares legais e documentação de conformidade para estúdios.",
     "common.language": "Idioma:",
@@ -3488,6 +3509,9 @@
   };
 
   var DICTIONARY_TH = {
+    "a11y.mobile_navigation_tabs": "แท็บนำทางบนมือถือ",
+    "a11y.timeline_of_protective_coating_degradati": "ลำดับเวลาการเสื่อมของชั้นเคลือบป้องกันตลอดรอบการทดสอบ EN 12472",
+    "a11y.quick_jump_to_sections": "ไปยังส่วนต่างๆ อย่างรวดเร็ว",
     "meta.title": "Nickel Release Calculator — คู่มือ EN 1811 และข้อมูลอ้างอิงวัสดุ",
     "meta.description": "Nickel Release Calculator — คู่มืออ้างอิงสำหรับ EN 1811:2023 และ REACH Annex XVII Entry 27 ว่าด้วยขีดจำกัดการปล่อยนิกเกิลในเครื่องประดับร่างกาย ข้อมูลอ้างอิงวัสดุ เกณฑ์ตามกฎหมาย และเอกสารการปฏิบัติตามข้อกำหนดสำหรับสตูดิโอ",
     "common.language": "ภาษา:",
