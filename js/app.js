@@ -227,7 +227,7 @@
       var tm = terms[i];
       receiptHtml += '<div class="receipt-card">' +
         '<div class="receipt-card-header">' +
-          '<span class="receipt-icon">🏷️</span>' +
+          '<span class="receipt-icon"><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-tag></use></svg></span>' +
           '<h3 class="receipt-term">' + esc(tm.term) + '</h3>' +
         '</div>' +
         '<div class="receipt-card-body">' +
@@ -831,7 +831,7 @@
       var isChecked = Boolean(chk && chk.checked);
 
       if (boxEl) {
-        boxEl.textContent = isChecked ? '✓' : '';
+        boxEl.innerHTML = isChecked ? '<svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-check></use></svg>' : '';
         boxEl.classList.toggle('verified', isChecked);
       }
       if (statusEl) {
